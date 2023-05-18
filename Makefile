@@ -13,8 +13,8 @@ OBJS = main.o fpconvert.o
 LIBS =
 CC = gcc
 DEBUG = -g
-WARN = -Wall -Wextra
-CFLAGS = -I. -std=gnu11 $(DEBUG) $(WARN)
+WARN = -Wall -Wextra -Werror -Wformat-security
+CFLAGS = -I. -std=gnu11 $(DEBUG) $(WARN) -O0
 
 AS = gcc
 ASLIST = -Wa,-adhln
